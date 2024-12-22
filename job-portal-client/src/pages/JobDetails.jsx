@@ -10,7 +10,7 @@ const JobDetails = () => {
 
   useEffect(() => {
     // Fetch job details using the `id` param
-    fetch(`http://localhost:3000/all-jobs/${id}`)
+    fetch(`https://jobportal-server-eight.vercel.app/all-jobs/${id}`)
       .then((res) => {
         if (!res.ok) {
           throw new Error(`HTTP error! Status: ${res.status}`);

@@ -13,7 +13,7 @@ const CreateJob = () => {
 
   const onSubmit = (data) => {
     //console.log(data); // Logs the form data
-    fetch("http://localhost:3000/post-job" ,{
+    fetch("https://jobportal-server-eight.vercel.app/post-job" ,{
       method: "POST",
       headers: {'content-type' : 'application/json'},
       body: JSON.stringify(data)

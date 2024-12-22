@@ -15,7 +15,7 @@ const MyJobs = () => {
 
     const fetchJobs = () => {
         setIsLoading(true);
-        fetch(`http://localhost:3000/my-job/rahmansaminur51@gmail.com`)
+        fetch(`https://jobportal-server-eight.vercel.app/my-job/rahmansaminur51@gmail.com`)
             .then((res) => res.json())
             .then((data) => {
                 if (Array.isArray(data)) {
@@ -44,7 +44,7 @@ const MyJobs = () => {
     };
 
     const handleDelete = (id) => {
-        fetch(`http://localhost:3000/job/${id}`, {
+        fetch(`https://jobportal-server-eight.vercel.app/job/${id}`, {
             method: "DELETE",
         })
             .then((res) => res.json())

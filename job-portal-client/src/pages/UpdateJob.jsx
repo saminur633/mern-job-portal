@@ -38,7 +38,7 @@ const UpdateJob = () => {
   const onSubmit = (data) => {
     data.skills = selectedOption.map(option => option.value); // Include skills in the data object
 
-    fetch(`http://localhost:3000/update-job/${id}`, {
+    fetch(`https://jobportal-server-eight.vercel.app/update-job/${id}`, {
       method: 'PATCH',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(data),
